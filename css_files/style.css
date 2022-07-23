@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/*starte of body*/
-
 body {
     background-color: black;
     color: white;
@@ -16,34 +14,16 @@ body {
     font-family: cali;
 }
 
-/*inde off body*/
-/*starte off container*/
-/* .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-
-} */
-
-/*inde off container*/
-/*starte off ul*/
-
-/*inde off ul*/
-/*starte off header*/
 input:focus {
     outline: none;
     border: 0;
 }
 
-/* a:hover,
-a:active {
-    text-decoration: double;
-    color: #aaa;
-    font-weight: bold;
-    font-size: 20px;
-} */
-
-/*inde off header*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 /********************* start navbar  **********************/
 .navbar {
@@ -173,7 +153,7 @@ section.our-servises .container .boxes .servise {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
+    min-height: 400px;
     width: 350px;
     transition: 0.3s;
 }
@@ -392,10 +372,15 @@ section.connection .connect {
 }
 
 @media (max-width : 1050px) {
+    .social li {
+        display: inline-block;
+        margin: 5px;
+    }
+
     .social li a i {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -409,6 +394,16 @@ section.connection .connect {
 
 .social li .fa-youtube:hover {
     background-color: #ff3300;
+    color: #fff;
+}
+
+.social li .fa-google {
+    background-color: #fff;
+}
+
+.social li .fa-google:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+    border: 1px solid #fff;
     color: #fff;
 }
 
@@ -492,37 +487,25 @@ section.mean .logo-braille .images div h3 {
 
 /**************** end about ********************/
 
-
-
-
-
-
-
-/* start of d1*/
-.d1 {
-    display: grid;
-    grid-template-columns: 300px 250px 250px 400px;
-    grid-template-rows: 400px 250px 250px 400px;
-}
-
-.d1 #dd1,
-.d1 #dd2,
-.d1 #dd3,
-.d1 #dd4 {
-    border: #aaa solid 1px;
-    height: 470px;
+div.sociales {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    box-shadow: 0px 2px 4px 0px rgba(204, 204, 204, 0.4), 0px 2px 4px 0px rgba(204, 204, 204, 0.4);
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.d1 {
-
-    text-align: center;
-    width: 30%;
-    padding: 10px;
-    line-height: 20px;
+div.sociales li {
+    font-size: 18px;
 }
 
-/* ende of d1*/
+
+
 /* start of footer */
 footer {
     padding: 20px;
@@ -531,21 +514,4 @@ footer {
     text-align: center;
     font-weight: bold;
     font-size: 20px
-}
-
-footer #pr1 {
-    float: right;
-}
-
-footer #pr2 {
-    text-align: center;
-}
-
-/* ende of footer */
-
-.myImg {
-    width: 20%;
-    margin-left: -980px;
-    margin-top: -88px;
-    margin-bottom: -70px;
 }
