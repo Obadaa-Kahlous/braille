@@ -487,6 +487,54 @@ section.mean .logo-braille .images div h3 {
 
 /**************** end about ********************/
 
+/******************* start braille-news ******************/
+section.braille-news {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.braille-news div.news {
+    margin: 40px;
+}
+
+@media (max-width : 765px) {
+    section.braille-news div.news {
+        margin: 40px 0;
+    }
+}
+
+section.braille-news img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+section.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.videos .last-videos .new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+section.videos video {
+    width: 100%;
+    height: 300px;
+}
+
+/******************* end braille-news ******************/
+
+
+
+
 div.sociales {
     position: fixed;
     left: 0;
